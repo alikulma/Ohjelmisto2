@@ -2,7 +2,7 @@ import requests
 
 try:
     kaupunki = input("Kirjoita paikkakunnan nimi, josta haluat säätiedot: ")
-    api_key = "5b0217b9e2eedbbcc528a4cc1cf2ca4f"
+    api_key = "1234"
     cords_pyynto = f"http://api.openweathermap.org/geo/1.0/direct?q={kaupunki}&limit=5&appid={api_key}"
     cords_vastaus = requests.get(cords_pyynto)
     json_cords_vastaus = cords_vastaus.json()
